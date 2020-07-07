@@ -1,32 +1,28 @@
 import 'package:flutter/material.dart';
+import 'HomePage.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(new MyApp());
+Map<int, Color> color = {
+  50: Color.fromRGBO(255, 92, 87, .1),
+  100: Color.fromRGBO(255, 92, 87, .2),
+  900: Color.fromRGBO(255, 92, 87, 1),
+};
+
+MaterialColor colorCustom = MaterialColor(0xff17252A, color);
 
 class MyApp extends StatelessWidget {
+  // This widget is the root of your application.
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        //Title bar for the app
-        appBar: AppBar(
-            title: Center(
-          child: Text('NewsApp'),
-        )),
-        //A button at the centre made for only demonstration purpose
-        body: Center(
-          child: RaisedButton(
-            color: Colors.redAccent,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(50.0)),
-            textColor: Colors.white,
-            child: Text(
-              "Tap for news",
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            onPressed: () {},
-          ),
-        ),
+    return new MaterialApp(
+      title: 'NewsApp',
+      theme: new ThemeData(
+        primarySwatch: colorCustom,
       ),
+      home: new HomePage(title: 'My NewsApp'),
     );
   }
 }
+
+
