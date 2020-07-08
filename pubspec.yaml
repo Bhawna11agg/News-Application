@@ -46,6 +46,7 @@ flutter:
   assets:
      - images/img.png
      - images/lake.jpg
+     - images/ss.png
    
   fonts:
      - family: BeeSerif
