@@ -1,3 +1,5 @@
+//import 'dart:html';
+
 import 'package:flutter/material.dart';
 //import 'main.dart';
 
@@ -40,15 +42,34 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.zero,
             children: <Widget>[
               new UserAccountsDrawerHeader(
-                accountName: new Text(
+                /* accountName: new Text(
                   'techSarvesh',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
+                ),*/
+              // margin: EdgeInsets.all(2),
+               arrowColor: Colors.teal,
+
+                accountName:new Container(
+                  margin: EdgeInsets.only(top:28),
+                  child: RaisedButton(
+                    color: Colors.teal,
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20.0)),
+                    textColor: Colors.white,
+                    child: Text(
+                      'techSarvesh',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    onPressed: () {
+                      _opennewpage("My Profile");
+                    },
+                  ),
                 ),
                 accountEmail: new Text(
-                  'sarveshtiwaridev@gmail.com',
+                  'sarveshtiwariDEV@gmail.com',
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,
@@ -58,11 +79,14 @@ class _HomePageState extends State<HomePage> {
                   image: new DecorationImage(
                     image: new AssetImage('images/lake.jpg'),
                     fit: BoxFit.cover,
+                    
                   ),
                 ),
                 currentAccountPicture: CircleAvatar(
                   radius: 25.0,
-                  backgroundImage: AssetImage('images/img.png'),
+                  backgroundImage: AssetImage(
+                    'images/img.png',
+                  ),
                 ),
               ),
               new ListTile(
