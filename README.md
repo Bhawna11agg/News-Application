@@ -7,3 +7,4 @@ This news app allows users to browse through news headlines for different categ
 ~ Flutter framework
 
 <img src="images/ss.png" width="25%"/>
+<img src="images/Screenshot_categories.png" width="25%"/>
