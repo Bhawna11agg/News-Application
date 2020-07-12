@@ -53,6 +53,7 @@ flutter:
      - images/ENTERTAINMENT.jpg
      - images/Technology.jpg
      - images/fashion.jpg
+     - images/Screenshot_categories.png
    
   fonts:
      - family: BeeSerif
