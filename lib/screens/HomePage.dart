@@ -1,5 +1,6 @@
 //import 'dart:html';
 
+import 'package:Project101/screens/Categories.dart';
 import 'package:flutter/material.dart';
 //import 'main.dart';
 
@@ -102,7 +103,10 @@ class _HomePageState extends State<HomePage> {
                     ),
                   ),
                   onTap: () {
-                    _opennewpage("Categories");
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Categories()),
+                    );
                   }),
               Padding(
                 padding: const EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),

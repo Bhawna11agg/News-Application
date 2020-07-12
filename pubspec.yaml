@@ -47,6 +47,12 @@ flutter:
      - images/img.png
      - images/lake.jpg
      - images/ss.png
+     - images/sports.jpg
+     - images/politics.jpg
+     - images/business.jpg
+     - images/ENTERTAINMENT.jpg
+     - images/Technology.jpg
+     - images/fashion.jpg
    
   fonts:
      - family: BeeSerif
