@@ -8,3 +8,4 @@ This news app allows users to browse through news headlines for different categ
 
 <img src="images/ss.png" width="25%"/>
 <img src="images/Screenshot_categories.png" width="25%"/>
+<img src="images/Home_page_screenshot" width="25%"/>
