@@ -1,5 +1,4 @@
 import 'dart:ui';
-
 import 'package:Project101/screens/HomePage.dart';
 import 'package:flutter/material.dart';
 //import 'main.dart';
@@ -31,7 +30,7 @@ class _CategoriesState extends State<Categories> {
               children: <Widget>[
                 GestureDetector(
                     child: Card(
-                      color: Colors.black,
+                     // color: Colors.black,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
@@ -40,6 +39,7 @@ class _CategoriesState extends State<Categories> {
                           // Max Size
                           Image(
                             image: AssetImage('images/sports.jpg'),
+                            fit: BoxFit.cover,
                           ),
                           Align(
                             alignment: Alignment.bottomRight,
@@ -48,7 +48,6 @@ class _CategoriesState extends State<Categories> {
                               child: Text(
                                 "Sports",
                                 style: TextStyle(
-                                  color: Colors.white,
                                   fontSize: 20.0,
                                 ),
                               ),
@@ -62,31 +61,31 @@ class _CategoriesState extends State<Categories> {
                     }),
                 GestureDetector(
                     child: Card(
+                      // color: Colors.black,
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10),
                       ),
-                      child: Stack(children: <Widget>[
-                        // Max Size
-                        Container(
-                          child: Image(
+                      child: Stack(
+                        children: <Widget>[
+                          // Max Size
+                          Image(
                             image: AssetImage('images/politics.jpg'),
+                            fit: BoxFit.cover,
                           ),
-                        ),
-                        Align(
-                          alignment: Alignment.bottomRight,
-                          child: Container(
-                            margin: EdgeInsets.all(10.0),
-                            child: Text(
-                              "Politics",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 20.0,
+                          Align(
+                            alignment: Alignment.bottomRight,
+                            child: Container(
+                              margin: EdgeInsets.all(10.0),
+                              child: Text(
+                                "Science",
+                                style: TextStyle(
+                                  fontSize: 20.0,
+                                ),
                               ),
                             ),
                           ),
-                        ),
-                      ]),
-                      color: Colors.black,
+                        ],
+                      ),
                     ),
                     onTap: () {
                       //activity
@@ -112,7 +111,7 @@ class _CategoriesState extends State<Categories> {
                               child: Text(
                                 "Business",
                                 style: TextStyle(
-                                  color: Colors.white,
+                                  color: Colors.black,
                                   fontSize: 20.0,
                                 ),
                               ),
@@ -120,7 +119,6 @@ class _CategoriesState extends State<Categories> {
                           ),
                         ],
                       ),
-                      color: Colors.black,
                     ),
                     onTap: () {
                       //activity
@@ -145,14 +143,13 @@ class _CategoriesState extends State<Categories> {
                             child: Text(
                               "Entertainment",
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20.0,
                               ),
                             ),
                           ),
                         ),
                       ]),
-                      color: Colors.black,
                     ),
                     onTap: () {
                       //activity
@@ -175,16 +172,15 @@ class _CategoriesState extends State<Categories> {
                           child: Container(
                             margin: EdgeInsets.all(10.0),
                             child: Text(
-                              "Technology",
+                              "Health",
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20.0,
                               ),
                             ),
                           ),
                         ),
                       ]),
-                      color: Colors.black,
                     ),
                     onTap: () {
                       //activity
@@ -207,16 +203,15 @@ class _CategoriesState extends State<Categories> {
                           child: Container(
                             margin: EdgeInsets.all(10.0),
                             child: Text(
-                              "Fashion",
+                              "Community",
                               style: TextStyle(
-                                color: Colors.white,
+                                color: Colors.black,
                                 fontSize: 20.0,
                               ),
                             ),
                           ),
                         ),
                       ]),
-                      color: Color(0xfffca308),
                     ),
                     onTap: () {
                       //activity
